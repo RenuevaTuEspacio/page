@@ -30,20 +30,20 @@
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav ms-auto text-center">
           <li class="nav-item">
-            <a class="nav-link border-bottom border-primary" href="#">Albanieleria</a>
+            <a id="activar-alvanieleria" class="nav-link border-bottom border-primary" href="#">Albanieleria</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link border-bottom border-secondary" href="#">Pintura</a>
+            <a id="activar-pintura" class="nav-link border-bottom border-secondary" href="#">Pintura</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-bottom border-success" href="#">Plomeria</a>
+            <a id="activar-plomeria" class="nav-link border-bottom border-success" href="#">Plomeria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-bottom border-danger" href="#">Ceramica</a>
+            <a id="activar-ceramica" class="nav-link border-bottom border-danger" href="#">Ceramica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-bottom border-warning" href="#">Jardineria</a>
+            <a id="activar-jardineria" class="nav-link border-bottom border-warning" href="#">Jardineria</a>
           </li>
           <li class="nav-item">
             <a id="active-contact" class="nav-link border-bottom border-info" href="#">Contactos</a>
@@ -127,9 +127,19 @@
     document.getElementById('active-contact').addEventListener('click', function () {
       var elementToHide = document.getElementById('contacto');
       var home = document.getElementById('home');
+      var albanieleria = document.getElementById('Albanieleria');
+      var pintura = document.getElementById('Pintura');
+      var plomeria = document.getElementById('Plomeria');
+      var ceramica = document.getElementById('Ceramica');
+      var jardinería = document.getElementById('Jardinería');
       if (elementToHide.classList.contains('collapse')) {
         elementToHide.classList.remove('collapse');
         home.classList.add('collapse');
+        albanieleria.classList.add('collapse');
+        pintura.classList.add('collapse');
+        plomeria.classList.add('collapse');
+        ceramica.classList.add('collapse');
+        jardinería.classList.add('collapse');
       } else {
         elementToHide.classList.add('collapse');
       }
