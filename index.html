@@ -60,7 +60,7 @@
   </header>
 
 
-  <div class="container text-center my-5 rounded-3 bg-light border border-info">
+  <div id="home" class="container text-center my-5 rounded-3 bg-light border border-info">
 
     <section class="jumbotron text-center ">
       <div class="container">
@@ -109,8 +109,10 @@
   <script>
     document.getElementById('active-contact').addEventListener('click', function () {
       var elementToHide = document.getElementById('contacto');
+      var home = document.getElementById('home');
       if (elementToHide.classList.contains('collapse')) {
         elementToHide.classList.remove('collapse');
+        home.classList.add('collapse');
       } else {
         elementToHide.classList.add('collapse');
       }
