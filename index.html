@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav ms-auto text-center">
           <li class="nav-item">
-            <a id="activar-alvanieleria" class="nav-link border-bottom border-primary" href="#">Albanieleria</a>
+            <a id="activar-albanieleria" class="nav-link border-bottom border-primary" href="#">Albanieleria</a>
           </li>
 
           <li class="nav-item">
@@ -46,7 +46,7 @@
             <a id="activar-jardineria" class="nav-link border-bottom border-warning" href="#">Jardineria</a>
           </li>
           <li class="nav-item">
-            <a id="active-contact" class="nav-link border-bottom border-info" href="#">Contactos</a>
+            <a id="activar-contacto" class="nav-link border-bottom border-info" href="#">Contactos</a>
           </li>
         </ul>
 
@@ -123,17 +123,141 @@
       </div>
     </div>
   </div>
+
   <script>
-    document.getElementById('active-contact').addEventListener('click', function () {
-      var elementToHide = document.getElementById('contacto');
+    document.getElementById('activar-albanieleria').addEventListener('click', function () {
+      var contacto = document.getElementById('contacto');
       var home = document.getElementById('home');
       var albanieleria = document.getElementById('Albanieleria');
       var pintura = document.getElementById('Pintura');
       var plomeria = document.getElementById('Plomeria');
       var ceramica = document.getElementById('Ceramica');
       var jardinería = document.getElementById('Jardinería');
-      if (elementToHide.classList.contains('collapse')) {
-        elementToHide.classList.remove('collapse');
+      if (albanieleria.classList.contains('collapse')) {
+        albanieleria.classList.remove('collapse');
+        home.classList.add('collapse');
+        contacto.classList.add('collapse');
+        pintura.classList.add('collapse');
+        plomeria.classList.add('collapse');
+        ceramica.classList.add('collapse');
+        jardinería.classList.add('collapse');
+      } else {
+        albanieleria.classList.add('collapse');
+      home.classList.remove('collapse');
+
+      }
+    });
+  </script>
+
+<script>
+  document.getElementById('activar-pintura').addEventListener('click', function () {
+    var contacto = document.getElementById('contacto');
+    var home = document.getElementById('home');
+    var albanieleria = document.getElementById('Albanieleria');
+    var pintura = document.getElementById('Pintura');
+    var plomeria = document.getElementById('Plomeria');
+    var ceramica = document.getElementById('Ceramica');
+    var jardinería = document.getElementById('Jardinería');
+    if (pintura.classList.contains('collapse')) {
+      pintura.classList.remove('collapse');
+      home.classList.add('collapse');
+      contacto.classList.add('collapse');
+      albanieleria.classList.add('collapse');
+      plomeria.classList.add('collapse');
+      ceramica.classList.add('collapse');
+      jardinería.classList.add('collapse');
+    } else {
+      pintura.classList.add('collapse');
+      home.classList.remove('collapse');
+
+    }
+  });
+</script>
+
+<script>
+  document.getElementById('activar-plomeria').addEventListener('click', function () {
+    var contacto = document.getElementById('contacto');
+    var home = document.getElementById('home');
+    var albanieleria = document.getElementById('Albanieleria');
+    var pintura = document.getElementById('Pintura');
+    var plomeria = document.getElementById('Plomeria');
+    var ceramica = document.getElementById('Ceramica');
+    var jardinería = document.getElementById('Jardinería');
+    if (plomeria.classList.contains('collapse')) {
+      plomeria.classList.remove('collapse');
+      home.classList.add('collapse');
+      contacto.classList.add('collapse');
+      albanieleria.classList.add('collapse');
+      pintura.classList.add('collapse');
+      ceramica.classList.add('collapse');
+      jardinería.classList.add('collapse');
+    } else {
+      plomeria.classList.add('collapse');
+      home.classList.remove('collapse');
+
+    }
+  });
+</script>
+
+<script>
+  document.getElementById('activar-ceramica').addEventListener('click', function () {
+    var contacto = document.getElementById('contacto');
+    var home = document.getElementById('home');
+    var albanieleria = document.getElementById('Albanieleria');
+    var pintura = document.getElementById('Pintura');
+    var plomeria = document.getElementById('Plomeria');
+    var ceramica = document.getElementById('Ceramica');
+    var jardinería = document.getElementById('Jardinería');
+    if (ceramica.classList.contains('collapse')) {
+      ceramica.classList.remove('collapse');
+      home.classList.add('collapse');
+      contacto.classList.add('collapse');
+      albanieleria.classList.add('collapse');
+      pintura.classList.add('collapse');
+      plomeria.classList.add('collapse');
+      jardinería.classList.add('collapse');
+    } else {
+      ceramica.classList.add('collapse');
+      home.classList.remove('collapse');
+    }
+  });
+</script>
+
+<script>
+  document.getElementById('activar-jardineria').addEventListener('click', function () {
+    var contacto = document.getElementById('contacto');
+    var home = document.getElementById('home');
+    var albanieleria = document.getElementById('Albanieleria');
+    var pintura = document.getElementById('Pintura');
+    var plomeria = document.getElementById('Plomeria');
+    var ceramica = document.getElementById('Ceramica');
+    var jardinería = document.getElementById('Jardinería');
+    if (jardinería.classList.contains('collapse')) {
+      jardinería.classList.remove('collapse');
+      home.classList.add('collapse');
+      contacto.classList.add('collapse');
+      albanieleria.classList.add('collapse');
+      pintura.classList.add('collapse');
+      plomeria.classList.add('collapse');
+      ceramica.classList.add('collapse');
+    } else {
+      jardinería.classList.add('collapse');
+      home.classList.remove('collapse');
+    }
+  });
+</script>
+
+  <script>
+    document.getElementById('activar-contacto').addEventListener('click', function () {
+      var contacto = document.getElementById('contacto');
+      var home = document.getElementById('home');
+      var albanieleria = document.getElementById('Albanieleria');
+      var pintura = document.getElementById('Pintura');
+      var plomeria = document.getElementById('Plomeria');
+      var ceramica = document.getElementById('Ceramica');
+      var jardinería = document.getElementById('Jardinería');
+      if (contacto.classList.contains('collapse')) {
+        contacto.classList.remove('collapse');
         home.classList.add('collapse');
         albanieleria.classList.add('collapse');
         pintura.classList.add('collapse');
@@ -141,10 +265,13 @@
         ceramica.classList.add('collapse');
         jardinería.classList.add('collapse');
       } else {
-        elementToHide.classList.add('collapse');
+        contacto.classList.add('collapse');
+      home.classList.remove('collapse');
+
       }
     });
   </script>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
