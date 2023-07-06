@@ -46,7 +46,7 @@
             <a class="nav-link border-bottom border-warning" href="#">Jardineria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-bottom border-info" href="#">Contactos</a>
+            <a id="active-contact" class="nav-link border-bottom border-info" href="#">Contactos</a>
           </li>
         </ul>
 
@@ -67,7 +67,7 @@
         <h1 class="display-4">Bienvenido a Renueva tu Espacio</h1>
         <p class="lead">Transforma tu espacio y renueva tu hogar, oficina y más. ¡Haz que tus ambientes luzcan
           increíbles y reflejen tu estilo personal!</p>
-        <a href="#" class="btn btn-success">ir a Whatsapp</a>
+        <a href="https://wa.me/0986683644" class="btn btn-success">Ir a Whatsapp</a>
       </div>
     </section>
 
@@ -92,27 +92,27 @@
   </div>
 
 
-  <div class="container my-5 text-center border border-info bg-light">
-    <div class="row ">
+  <div id="contacto" class=" collapse  my-5 text-center border border-info bg-light">
+    <div class="row">
       <div class="col-md-6  mx-auto" >
         <div class="card mb-3 border border-info">
           <img src="./images/qr.jpg" alt="Imagen" class="img-fluid shadow rounded-3 card-img-top">
           <div class="card-body">
             <h5 class="card-title">099 999 9999 </h5>
             <p class="card-text">Renueva tu Espacio</p>
-            <a href="#" class="btn btn-success">ir a Whatsapp</a>
+            <a href="https://wa.me/0986683644" class="btn btn-success">Ir a Whatsapp</a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <script>
-    document.getElementById('toggleButton').addEventListener('click', function () {
-      var elementToHide = document.getElementById('elementToHide');
-      if (elementToHide.classList.contains('hide')) {
-        elementToHide.classList.remove('hide');
+    document.getElementById('active-contact').addEventListener('click', function () {
+      var elementToHide = document.getElementById('contacto');
+      if (elementToHide.classList.contains('collapse')) {
+        elementToHide.classList.remove('collapse');
       } else {
-        elementToHide.classList.add('hide');
+        elementToHide.classList.add('collapse');
       }
     });
   </script>
