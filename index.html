@@ -23,32 +23,43 @@
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto text-center">
-          <li class="nav-item">
-            <a id="activar-albanieleria" class="nav-link border-bottom border-primary" href="#">Albanieleria</a>
-          </li>
-
-          <li class="nav-item">
-            <a id="activar-pintura" class="nav-link border-bottom border-secondary" href="#">Pintura</a>
-          </li>
-          <li class="nav-item">
-            <a id="activar-plomeria" class="nav-link border-bottom border-success" href="#">Plomeria</a>
-          </li>
-          <li class="nav-item">
-            <a id="activar-ceramica" class="nav-link border-bottom border-danger" href="#">Ceramica</a>
-          </li>
-          <li class="nav-item">
-            <a id="activar-jardineria" class="nav-link border-bottom border-warning" href="#">Jardineria</a>
-          </li>
-          <li class="nav-item">
-            <a id="activar-contacto" class="nav-link border-bottom border-info" href="#">Contactos</a>
-          </li>
-        </ul>
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item">
+          <a id="activar-albanieleria" class="nav-link border-bottom border-primary" href="#" onclick="cerrarMenu()">Albanieleria</a>
+        </li>
+    
+        <li class="nav-item">
+          <a id="activar-pintura" class="nav-link border-bottom border-secondary" href="#" onclick="cerrarMenu()">Pintura</a>
+        </li>
+        <li class="nav-item">
+          <a id="activar-plomeria" class="nav-link border-bottom border-success" href="#" onclick="cerrarMenu()">Plomeria</a>
+        </li>
+        <li class="nav-item">
+          <a id="activar-ceramica" class="nav-link border-bottom border-danger" href="#" onclick="cerrarMenu()">Ceramica</a>
+        </li>
+        <li class="nav-item">
+          <a id="activar-jardineria" class="nav-link border-bottom border-warning" href="#" onclick="cerrarMenu()">Jardineria</a>
+        </li>
+        <li class="nav-item">
+          <a id="activar-contacto" class="nav-link border-bottom border-info" href="#" onclick="cerrarMenu()">Contactos</a>
+        </li>
+      </ul>
+    </div>
+    
+    <script>
+      function cerrarMenu() {
+        var navbarMenu = document.getElementById('navbarMenu');
+        var bootstrapNavbar = new bootstrap.Collapse(navbarMenu);
+        bootstrapNavbar.hide();
+      }
+    </script>
+    
+    
 
         <!-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
